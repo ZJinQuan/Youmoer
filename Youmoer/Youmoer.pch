@@ -1,0 +1,20 @@
+//
+//  Youmoer.pch
+//  Youmoer
+//
+//  Created by QUAN on 16/5/19.
+//  Copyright © 2016年 QUAN. All rights reserved.
+//
+
+#ifndef Youmoer_pch
+#define Youmoer_pch
+#ifdef __OBJC__
+
+#define RGBA(A, B, C, D) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:D/1.0]
+#define kScreenWidth        [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight       [UIScreen mainScreen].bounds.size.height
+
+#import "UIView+Extension.h"
+
+#endif
+#endif /* Youmoer_pch */
