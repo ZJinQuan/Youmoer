@@ -60,7 +60,7 @@
             [_mainScrollView addSubview:line];
         }
         
-        
+        NSArray *nameArr = [[NSArray alloc] initWithObjects:@"行走控制",@"视频监控",@"情景逗乐",@"家庭乐园",@"智能家居",@"优陌儿商店", nil];
         
         for (int i = 0; i < 6; i++) {
             
@@ -77,7 +77,6 @@
                     [btn setImage:[UIImage imageNamed:@"home_walk"] forState:UIControlStateNormal];
                     btn.tag = 1000;
                     
-                    lab.text = @"行走控制";
                 }
                     break;
                 case 1:{
@@ -85,7 +84,6 @@
                     [btn setImage:[UIImage imageNamed:@"home_camera"] forState:UIControlStateNormal];
                     btn.tag = 1001;
                     
-                    lab.text = @"视频监控";
                 }
                     break;
                 case 2:{
@@ -93,7 +91,6 @@
                     [btn setImage:[UIImage imageNamed:@"home_amuse"] forState:UIControlStateNormal];
                     btn.tag = 1002;
                     
-                    lab.text = @"情景逗乐";
                 }
                     break;
                 case 3:{
@@ -101,7 +98,6 @@
                     [btn setImage:[UIImage imageNamed:@"home_fairyland"] forState:UIControlStateNormal];
                     btn.tag = 1003;
                     
-                    lab.text = @"家庭乐园";
                 }
                     break;
                 case 4:{
@@ -109,7 +105,6 @@
                     btn.tag = 1004;
                     [btn setImage:[UIImage imageNamed:@"home_smart"] forState:UIControlStateNormal];
                     
-                    lab.text = @"智能家居";
                 }
                     break;
                 case 5:{
@@ -117,13 +112,14 @@
                     btn.tag = 1005;
                     [btn setImage:[UIImage imageNamed:@"home_store"] forState:UIControlStateNormal];
                     
-                    lab.text = @"优陌儿商店";
                 }
                     break;
                     
                 default:
                     break;
             }
+            
+            lab.text = nameArr[i];
             
             lab.frame = CGRectMake(0, btn.height - 30, btn.width, 40);
             
