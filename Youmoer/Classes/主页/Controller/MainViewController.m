@@ -25,6 +25,7 @@
     
     if (_mainScrollView == nil) {
         
+        
         _mainScrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
         
         CGFloat BtnW = _mainScrollView.bounds.size.width / 2;
