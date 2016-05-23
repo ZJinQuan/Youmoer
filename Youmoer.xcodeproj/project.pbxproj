@@ -212,11 +212,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1454CF051CEE9F8000D358D1 /* 行走控制 */ = {
+		1454CF051CEE9F8000D358D1 /* 行走控制/视频监控 */ = {
 			isa = PBXGroup;
 			children = (
 				1454CF061CEE9FC300D358D1 /* Controller */,
 			);
+			name = "行走控制/视频监控";
 			path = "行走控制";
 			sourceTree = "<group>";
 		};
@@ -392,7 +393,7 @@
 				14BB430F1CEDB6A1009B78D3 /* BaseViewController.h */,
 				14BB43101CEDB6A1009B78D3 /* BaseViewController.m */,
 				14BB43081CEDB29A009B78D3 /* 主页 */,
-				1454CF051CEE9F8000D358D1 /* 行走控制 */,
+				1454CF051CEE9F8000D358D1 /* 行走控制/视频监控 */,
 				1454CF2C1CEEF8D900D358D1 /* 情趣逗乐 */,
 				1454CF161CEEBE7700D358D1 /* 家庭乐园 */,
 				1454CF2E1CEEF94200D358D1 /* 智能家居 */,

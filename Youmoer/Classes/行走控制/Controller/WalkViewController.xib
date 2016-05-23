@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="image1" destination="4Ey-GV-wMX" id="yPc-Ih-plR"/>
                 <outlet property="label1" destination="Cve-ZL-bBw" id="ouL-iq-7ND"/>
+                <outlet property="liineHeight" destination="Hu3-vL-3Zq" id="ahc-lb-Su4"/>
                 <outlet property="monitorImageView" destination="IaK-No-ooh" id="EFH-rj-Jly"/>
                 <outlet property="monitorView" destination="uyI-Am-x1E" id="10V-lF-a2h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -68,7 +69,7 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_control1.png" translatesAutoresizingMaskIntoConstraints="NO" id="563-zK-FlM">
                             <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-fg-Chl">
+                        <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-fg-Chl">
                             <rect key="frame" x="40" y="13" width="170" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="2GL-eM-TB8"/>

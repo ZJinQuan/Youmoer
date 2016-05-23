@@ -39,18 +39,13 @@
             
             switch (i) {
                 case 0:
-                    line.frame = CGRectMake(0, 0, 1, _mainScrollView.height - 200);
+                    line.frame = CGRectMake(0, 0, 1, _mainScrollView.height / 4 * 3);
                     line.centerX = _mainScrollView.centerX;
                     line.y = 50;
                     break;
-                case 1:
+                case 1: case 2:
                     
-                    line.frame = CGRectMake( 20, BtnH + 20, _mainScrollView.width - 40, 1);
-                    
-                    break;
-                case 2:
-                    
-                    line.frame = CGRectMake( 20, (BtnH + 20) * 2, _mainScrollView.width - 40, 1);
+                    line.frame = CGRectMake( 20, (BtnH + 20) * i, _mainScrollView.width - 40, 1);
                     
                     break;
                     
@@ -147,6 +142,7 @@
     
     [super viewWillAppear:animated];
     
+    [self.view addSubview:self.mainScrollView];
 }
 
 
@@ -155,7 +151,7 @@
     
     self.title = @"主页";
     
-    [self.view addSubview:self.mainScrollView];
+    
     
 }
 

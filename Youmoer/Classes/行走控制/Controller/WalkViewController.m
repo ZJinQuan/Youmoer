@@ -13,17 +13,26 @@
 @property (weak, nonatomic) IBOutlet UIView *monitorView;
 @property (weak, nonatomic) IBOutlet UIImageView *image1;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *liineHeight;
 
 @end
 
 @implementation WalkViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    self.liineHeight.constant = kScreenHeight / 3;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"监控/控制";
 
     self.monitorView.backgroundColor = RGBA(50, 163, 107, 1);
-    
+    self.navigationController.navigationBar.barStyle = UIBaselineAdjustmentNone;
 }
 
 - (IBAction)clickMonitor:(UIButton *)sender {

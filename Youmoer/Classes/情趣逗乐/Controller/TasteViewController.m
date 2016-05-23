@@ -61,9 +61,14 @@
     
     cell.iconImage.image = [UIImage imageNamed:imageArr[indexPath.row]];
     cell.nameLab.text = nameArr[indexPath.row];
-//    cell.backgroundColor = [UIColor yellowColor];
     
     return cell;
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    TasteCell *cell = collectionView.visibleCells[indexPath.row];
+    
+    NSLog(@"%@",cell.nameLab.text);
+}
 @end
