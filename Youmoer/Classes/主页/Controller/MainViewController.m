@@ -43,7 +43,7 @@
                     line.centerX = _mainScrollView.centerX;
                     line.y = 50;
                     break;
-                case 1: case 2:
+                case 1: case 2: 
                     
                     line.frame = CGRectMake( 20, (BtnH + 20) * i, _mainScrollView.width - 40, 1);
                     
