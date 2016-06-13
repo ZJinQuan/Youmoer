@@ -47,6 +47,7 @@
                     
                     line.frame = CGRectMake( 20, (BtnH + 20) * i, _mainScrollView.width - 40, 1);
                     
+                    
                     break;
                     
                 default:
